@@ -1,0 +1,10 @@
+//data model
+https://www.dropbox.com/s/065l4vr8bptzohb/resnet-34_kinetics.onnx?dl=1
+
+
+// To run the code
+// for sample video
+python HAR.py --model resnet-34_kinetics.onnx --classes Actions.txt --input sample_video.mp4 --gpu 1 --output output.mp4
+
+// for live web camera
+python HAR.py --model resnet-34_kinetics.onnx --classes Actions.txt
